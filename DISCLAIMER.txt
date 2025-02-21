@@ -1,0 +1,4 @@
+Este proyecto se ha elaborado con fines educativos y no pretende
+ser usado para dañar un sistema ni debe alterarse para tal fin.
+Se ha escrito para probar las funcionalidades básicas de git y
+practicar el uso de bash.
